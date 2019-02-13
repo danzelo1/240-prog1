@@ -25,7 +25,7 @@
 
 ### Grading Rubric
 
-**_TOTAL: 55 points_**
+**_TOTAL: 45 points_**
 
 * **Part A** (10 points): Vectors
     * [2 pts] Test 1 Passed: creates a vector with properly initialized values
@@ -38,12 +38,9 @@
     * [2 pts] Test 11 Passed: inserting into list at index passes test
     * [2 pts] Test 12 Passed: reading from list at index passes test
     * [4 pts] Test 13 Passed: removing and deleting from list at index passes test
-* **Part C** (30 points): Stars
-    * [2 pts] Test 15 Passed: create Starvector and Starlist without error
-    * [2 pts] Test 16 Passed: push onto Starvector and Starlist
-    * [2 pts] Test 17 Passed: pop from Starvector and Starlist
-    * [2 pts] Test 19 Passed: clear Starvector and Starlist
-    * [2 pts] Test 20 Passed: delete Starvector and Starlist without error
+* **Part C** (20 points): Stars
+    * [12 pts] Test 14 Passed: create, read, and remove from Starvector and Starlist without error
+    * [8 pts] Test 15 Passed: delete Starvector and Starlist without error
 * **Part D** (5 points): Profile
    * [5 pts] completes profiling without error
 * **Style Guidelines and Memory Leaks**
@@ -74,6 +71,14 @@ You will reuse your Planet class from lab 3 with no changes.
 :warning: *For all Data Structures, you may (and probably should) add additional functions, methods, and attributes, but what follows is the required minimum interface*
 
 :no_entry_sign: You may __not__ use the STL library for this program.
+
+You will need to make a small change to your planet class constructor.
+
+#### Planet
+* `Planet(int distance)`
+    * You do not need to pass an ID. The ID will now be the address of the object.
+* `long int getID()`
+    * The return type of the getID() method will need to be changed to a long to hold the address (8 bytes)
 
 ## Part A: Vectors
 You must break up your code into Vector.h and Vector.cpp according to the conventions we have discussed in class.
