@@ -72,6 +72,7 @@ You will reuse your Planet class from lab 3 with no changes.
 
 :no_entry_sign: You may __not__ use the STL library for this program.
 
+***
 You will need to make a small change to your planet class constructor.
 
 #### Planet
@@ -79,6 +80,9 @@ You will need to make a small change to your planet class constructor.
     * You do not need to pass an ID. The ID will now be the address of the object.
 * `long int getID()`
     * The return type of the getID() method will need to be changed to a long to hold the address (8 bytes)
+
+:warning: You will need to update your `Star` class method `addPlanet` accordingly.
+***    
 
 ## Part A: Vectors
 You must break up your code into Vector.h and Vector.cpp according to the conventions we have discussed in class.
@@ -94,21 +98,11 @@ Create a dynamic array data class, Vector. You must create your internal array o
     * if the index is out of bounds, return NULL
 * `bool remove(int index)`
     * remove the Planet object at `index`, decreasing the size of the Vector by 1.
-* unsigned size();
+* `unsigned size()`
     * returns the current size of the Vector (this may not be the same as the number of elements)
 
 ## Part B: Linked Lists
-You must break up your code into List.h and List.cpp according to the conventions we discussed in class.
-
-Your Node class must have the following:
-```
-    struct Node * next/prev; // A pointer to the next and previous nodes
-    Data data; // A data object (:note: not a pointer)
-```
-Your List class must have, at a minimum, the following:
-//TODO
-
-Create a doubly linked list using a List and Node classes. :bulb: Your List and Node classes can go in the same file. You must create your linked list on the heap (using new). Your linked list should have the following operations:
+You must break up your code into List.h and List.cpp according to the conventions we discussed in class. Create a doubly linked list using a List and Node classes. :bulb: Your List and Node classes can go in the same file. Your linked list should have the following operations:
 * `List()`
     * A pointer to a head and tail node, both initialized to NULL
 * `~List()`
