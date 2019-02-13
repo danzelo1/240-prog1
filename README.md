@@ -141,7 +141,7 @@ Your Starlist must have the following:
 * `Planet * getPlanet(int)`
     * Takes a Planet’s ID and returns a pointer to the Planet. If the Planet is not found, it returns NULL.
 * `void orbit()`
-    * :warning: Iterate through your planets and alter their orbit
+    * Iterate through your planets and alter their orbit position by +1
 * `void printStarInfo()`
     * Prints the Star information.
 * `int getCurrentNumPlanets()`
@@ -162,15 +162,15 @@ Your Starvector must have the following:
 * `Planet * getPlanet(int)`
     * Takes a Planet’s ID and returns a pointer to the Planet. If the Planet is not found, it returns NULL.
 * `void orbit()`
-    * :warning: Although the `orbit` method does not change much, you will have to alter it to use pointers.
+    * Iterate through your planets and alter their orbit position by +1
 * `void printStarInfo()`
     * Prints the Star information.
 * `int getCurrentNumPlanets()`
-    * returns the current number of planets stored
+    * returns the current number of planets stored (the size of the vector)
 
 ## Part D: Profiling
 
-Welcome to the easy part. If you made it this far, you can sit back and relax. I have included a source file called profile.c/.h. Inside this file I have implemented functions that test the operations for both your stacks and queues.
+Welcome to the easy part. If you made it this far, you can sit back and relax. I have written some profiling that test the operations for both versions of your Star class.
 
 Pay attention to the output.
 * What implementation is better for insertion?
