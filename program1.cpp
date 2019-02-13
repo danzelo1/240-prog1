@@ -160,7 +160,6 @@ int main(){
     id_list[0] = sl->addPlanet();
     assert(sl->getCurrentNumPlanets() == 1);
     p = sl->getPlanet(id_list[0]);
-    cerr << p << ":" << id_list[0] << endl;
     int pos = p->getPos();
     sl->orbit();
     assert(p->getPos() == (pos + 1) % 360);
@@ -171,10 +170,10 @@ int main(){
     assert(sv->getCurrentNumPlanets() == 1);
     p = sv->getPlanet(id_list[1]);
     pos = p->getPos();
-    sl->orbit();
+    sv->orbit();
     assert(p->getPos() == (pos + 1) % 360);
 
-    //add the 100 more planets to each
+    //add 200 more planets to each
     for(int i = 0; i < 200; i+=2){
         id_list[i] = sv->addPlanet();
         id_list[i+1] = sl->addPlanet();

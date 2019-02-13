@@ -133,7 +133,7 @@ Your Starlist must have the following:
     * Initialize memory
 * `~Starlist()`
     * deallocate all memory when the Star is deleted.
-* `int addPlanet()`
+* `long addPlanet()`
     * return the ID of the newly created Planet
 * `bool removePlanet(int)`
     * Takes a Planet’s ID as a parameter, and removes the Planet from the Star.
@@ -144,7 +144,7 @@ Your Starlist must have the following:
     * Iterate through your planets and alter their orbit position by +1
 * `void printStarInfo()`
     * Prints the Star information.
-* `int getCurrentNumPlanets()`
+* `unsigned int getCurrentNumPlanets()`
     * returns the current number of planets stored
 
 #### Starvector
@@ -154,7 +154,7 @@ Your Starvector must have the following:
     * Initialize memory
 * `~Starvector()`
     * deallocate all memory when the Star is deleted.
-* `int addPlanet()`
+* `long addPlanet()`
     * return the ID of the newly created Planet
 * `bool removePlanet(int)`
     * Takes a Planet’s ID as a parameter, and removes the Planet from the Star.
@@ -165,7 +165,7 @@ Your Starvector must have the following:
     * Iterate through your planets and alter their orbit position by +1
 * `void printStarInfo()`
     * Prints the Star information.
-* `int getCurrentNumPlanets()`
+* `unsigned int getCurrentNumPlanets()`
     * returns the current number of planets stored (the size of the vector)
 
 ## Part D: Profiling
