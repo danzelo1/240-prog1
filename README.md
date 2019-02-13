@@ -116,12 +116,12 @@ You must break up your code into List.h and List.cpp according to the convention
 * `bool remove(int index)`
     * remove the Planet object at `index`, decreasing the size of the Vector by 1.
     * return `true` on successful deletion or `false` if the index is out of bounds
-* unsigned size();
+* `unsigned size()`
     * returns the current size of the List
 
 ## Part C: Full of Stars
 
-Although you should have most of the code written from previous labs. You will need to make slight alterations to allow your Star class to work with one of the Data Structures (Vector, List) you have created. You must break up your code into Star.h and Star.cpp according to the conventions we discussed in class.
+Although you should have most of the code written from previous labs. You will need to make slight alterations to your Star class to work with the changes to the Planet class and to work with one of the Data Structures (Vector, List) you have created. You must break up your code into Star.h and Star.cpp according to the conventions we discussed in class.
 
 You will have two Star classes, Starlist and Starvector. You will be using your List and Vector, respectively, as the internal data structure to hold Planets.
 
