@@ -8,8 +8,8 @@ Star::Star(){
 }
 
 Star::~Star(){
-        for(int i=0; i<this->current_planets; i++){
-	  delete(this->planets[i]);
+	for(int i=0; i<this->current_planets; i++){
+		delete(this->planets[i]);
 	}
 	delete[] (this->planets);
 }
