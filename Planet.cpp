@@ -1,9 +1,9 @@
 #include "Planet.h"
 #include <iostream>
 
-Planet::Planet(int id){
-	this->id = id;
-	this->distance = std::rand()%3000;
+Planet::Planet(int distance){
+	this->id = &this;
+	this->distance = distance;
 	this->position = std::rand()%360;
 	int num = std::rand()%3;
 	if (num == 0) this->type = 'h';

@@ -4,7 +4,6 @@
 
 Star::Star(){
 	this->current_planets = 0;
-	this->next_id = 0;
 	this->planets = NULL;
 }
 
@@ -20,16 +19,15 @@ int Star::addPlanet(){
 	for(int i=0; i<this->current_planets; i++){
 		temp[i] = (this->planets)[i];
 	}
-	Planet *temp2 = new Planet(this->next_id);
+	Planet *temp2 = new Planet(std::rand()%3000);
 	temp[this->current_planets] = temp2;
-	this->next_id++;
 	this->current_planets++;
 	delete[] (this->planets);
 	this->planets = temp;
 	return temp2->getID();
 }
 
-bool Star::removePlanet(int id){
+bool Star::removePlanet(long int id){
 	bool find = false;
 	for(int i=0; i<this->current_planets; i++){
 		if(this->planets[i]->getID() == id){
@@ -53,7 +51,7 @@ bool Star::removePlanet(int id){
 	return find;		
 }
 
-Planet *Star::getPlanet(int id){
+Planet *Star::getPlanet(long int id){
 	Planet *ret = NULL;
 	for(int i=0; i<this->current_planets; i++){
 		if(this->planets[i]->getID() == id){

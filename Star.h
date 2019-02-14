@@ -5,14 +5,13 @@
 class Star{
 	private:
         int current_planets;
-        int next_id;
 	public:
         Planet **planets;
         Star();
-		~Star();
+	~Star();
         int addPlanet();
-		bool removePlanet(int);
-		Planet *getPlanet(int);
+	bool removePlanet(long int);
+	Planet *getPlanet(long int);
         Planet getFurthest();
         void orbit();
         void printStarInfo();
