@@ -2,7 +2,7 @@
 #include <iostream>
 
 Planet::Planet(int distance){
-	this->id = &this;
+	this->id = (long)this;
 	this->distance = distance;
 	this->position = std::rand()%360;
 	int num = std::rand()%3;

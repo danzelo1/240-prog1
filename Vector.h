@@ -4,15 +4,15 @@
 
 class Vector{
 private:
-        int current_planets;
+	int current_planets;
 public:
 	Planet **planets;
 	Vector();
 	~Vector();
-        void insert(int, Planet);
+    void insert(int, Planet *);
 	Planet *read(int);
 	bool remove(int);
-        unsigned size();
+    unsigned size();
 };
 
 #endif
